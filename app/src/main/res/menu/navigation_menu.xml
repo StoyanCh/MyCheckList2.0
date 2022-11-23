@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+
+        <item android:textColor = "@color/black"
+            android:id="@+id/myTasks"
+            android:icon="@drawable/notebook"
+            android:iconTint="@color/black"
+
+            android:title="@string/my_tasks"/>
+        <item
+            android:id="@+id/toDo"
+            android:icon="@drawable/ic_to_do_list"
+            android:title="@string/to_do"/>
+        <item
+            android:id="@+id/importantTasks"
+            android:icon="@drawable/exclamation_mark"
+            android:title="@string/important_tasks"/>
+        <item
+            android:id="@+id/todayTasks"
+            android:icon="@drawable/calendar"
+            android:title="@string/today_s_tasks"/>
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/calendarr"
+            android:title="@string/calendar"/>
+    </group>
+
+    <item
+        android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/menuSetting"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings"/>
+
+            <item
+                android:id="@+id/menuLogOut"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/log_out"/>
+        </menu>
+    </item>
+</menu>
