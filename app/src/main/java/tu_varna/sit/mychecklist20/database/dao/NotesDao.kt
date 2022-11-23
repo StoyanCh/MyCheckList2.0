@@ -1,4 +1,4 @@
-package tu_varna.sit.mychecklist20.dao
+package tu_varna.sit.mychecklist20.database.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
