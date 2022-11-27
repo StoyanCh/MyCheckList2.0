@@ -9,8 +9,8 @@ import tu_varna.sit.mychecklist20.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var toggle: ActionBarDrawerToggle
-    lateinit var binding: ActivityMainBinding
+    private lateinit var toggle: ActionBarDrawerToggle
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
