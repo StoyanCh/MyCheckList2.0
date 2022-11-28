@@ -15,12 +15,21 @@ class LogInActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.buttonLogIn?.setOnClickListener {
-            main()
+            goToMain()
+        }
+
+        binding?.makeRegistration?.setOnClickListener {
+            goToRegister()
         }
     }
 
-    private fun main(){
+    private fun goToMain(){
         val intent = Intent(this@LogInActivity,MainActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun goToRegister(){
+        val intent = Intent(this@LogInActivity,RegisterActivity::class.java)
         startActivity(intent)
     }
 }
