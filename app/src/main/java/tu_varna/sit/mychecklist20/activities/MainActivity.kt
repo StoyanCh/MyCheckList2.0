@@ -1,9 +1,7 @@
 package tu_varna.sit.mychecklist20.activities
 
-import android.content.ClipData
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -26,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.navigationView.setNavigationItemSelectedListener {
+
             it.isChecked = true
             when(it.itemId){
                 R.id.myTasks -> replaceFragment(MyTasksFragment(),it.title.toString() )
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.importantTasks -> replaceFragment(ImportantTasksFragment(), it.title.toString())
                 R.id.todayTasks -> replaceFragment(TodayTaskFragment(), it.title.toString())
                 R.id.calendar -> replaceFragment(TodayTaskFragment(), it.title.toString())
-                //  R.id.menuSetting -> replaceFragment(SettingsFragment(), it.title.toString())
+                //R.id.menuSetting -> replaceFragment(SettingsFragment(), it.title.toString())
             }
             true
 
