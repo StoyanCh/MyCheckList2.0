@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import tu_varna.sit.mychecklist20.*
 import tu_varna.sit.mychecklist20.databinding.ActivityMainBinding
+import tu_varna.sit.mychecklist20.fragments.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setNavigationItemSelectedListener {
             openMenu()
             when(it.itemId){
+                //R.id.HomePage -> replaceFragment(HomeFragment(), it.title.toString())
                 R.id.myTasks -> replaceFragment(MyTasksFragment(),it.title.toString() )
                 R.id.toDo -> replaceFragment(ToDoFragment(), it.title.toString())
                 R.id.importantTasks -> replaceFragment(ImportantTasksFragment(), it.title.toString())

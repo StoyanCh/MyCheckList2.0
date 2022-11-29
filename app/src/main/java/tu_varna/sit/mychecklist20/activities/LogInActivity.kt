@@ -25,6 +25,7 @@ class LogInActivity : AppCompatActivity() {
 
     private fun goToMain(){
         val intent = Intent(this@LogInActivity,MainActivity::class.java)
+        finish()
         startActivity(intent)
     }
 
