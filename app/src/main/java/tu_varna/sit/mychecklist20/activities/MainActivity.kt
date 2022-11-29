@@ -20,12 +20,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imageMenu.setOnClickListener {
-            binding.drawerLayout.openDrawer(GravityCompat.START)
+            openMenu()
         }
 
         binding.navigationView.setNavigationItemSelectedListener {
-
-            it.isChecked = true
+            openMenu()
             when(it.itemId){
                 R.id.myTasks -> replaceFragment(MyTasksFragment(),it.title.toString() )
                 R.id.toDo -> replaceFragment(ToDoFragment(), it.title.toString())
@@ -40,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    private fun openMenu(){
+        binding.drawerLayout.openDrawer(GravityCompat.START)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true
@@ -50,7 +53,7 @@ class MainActivity : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment, title : String){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.drawerLayout, fragment)
+        fragmentTransaction.replace(R.id.frameLayout, fragment)
         fragmentTransaction.commit()
         binding.drawerLayout.closeDrawers()
         setTitle(title)
