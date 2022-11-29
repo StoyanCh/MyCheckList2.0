@@ -3,10 +3,12 @@
     <group android:checkableBehavior="single">
 
         <item android:textColor = "@color/black"
+            android:id="@+id/HomePage"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"/>
+        <item android:textColor = "@color/black"
             android:id="@+id/myTasks"
             android:icon="@drawable/notebook"
-            android:iconTint="@color/black"
-
             android:title="@string/my_tasks"/>
         <item
             android:id="@+id/toDo"
