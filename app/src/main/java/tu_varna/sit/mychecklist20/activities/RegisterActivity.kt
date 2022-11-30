@@ -20,6 +20,10 @@ class RegisterActivity : AppCompatActivity() {
         binding?.loginForgotPass?.setOnClickListener {
             logInForm()
         }
+
+        binding?.logInTxt?.setOnClickListener{
+            logInForm()
+        }
     }
 
     private fun register(){

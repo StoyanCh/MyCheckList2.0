@@ -305,7 +305,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView  android:id="@+id/loginLogInTxt"
+    <TextView  android:id="@+id/logInTxt"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:layout_marginLeft="60dp"
@@ -315,15 +315,16 @@
         android:layout_height="wrap_content"
         android:text="Login"/>
 
-    <TextView  android:id="@+id/loginSignUpTxt"
-        android:textSize="20sp"
+    <TextView  android:id="@+id/signUpTxt"
+        android:textSize="30sp"
         android:gravity="right"
         android:layout_marginRight="60dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintTop_toBottomOf="@id/frameLayoutLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:text="Sign Up"/>
 
 

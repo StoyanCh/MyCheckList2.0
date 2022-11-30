@@ -21,6 +21,10 @@ class LogInActivity : AppCompatActivity() {
         binding?.makeRegistration?.setOnClickListener {
             goToRegister()
         }
+
+        binding?.signUpTxt?.setOnClickListener{
+            goToRegister()
+        }
     }
 
     private fun goToMain(){

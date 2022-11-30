@@ -117,20 +117,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView  android:id="@+id/loginLogInTxt"
-        android:textSize="20sp"
+    <TextView  android:id="@+id/logInTxt"
+        android:textSize="35sp"
         android:textColor="@android:color/white"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintTop_toTopOf="@id/loginPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="@string/log_in"/>
 
-    <TextView  android:id="@+id/loginSignUpTxt"
+    <TextView  android:id="@+id/signUpTxt"
         android:textSize="20sp"
         android:gravity="end"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="60dp"
         app:layout_constraintTop_toTopOf="@id/loginPanel"
         android:layout_width="match_parent"
